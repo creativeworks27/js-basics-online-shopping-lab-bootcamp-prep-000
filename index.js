@@ -18,12 +18,23 @@ return `${newObj.itemName} has been added to your cart.`;
 }
 function viewCart() {
   // write your code here
-  let itemsInCart = "In your cart, you have ";
-  if (cart.length < 0){
+var itemsInCart = `In your cart, you have`;
+  if(cart.length<1){
     return "Your shopping cart is empty.";
   }
   else if (cart.length === 1){
-    let itemsInCart = itemsInCart + cart[0].itemName + "at" + cart[0].itemPrice + ".";}
+    itemsInCart = itemsInCart + " " + cart[0].itemName + " at $" + cart[0].itemPrice + ".";
+    return itemsInCart;
+  }
+  for(var i=0;i<cart.length; i++){
+    if((i+1) === cart.length){
+      itemsInCart = itemsInCart + " and " + cart[i].itemName + " at $" + cart[i].itemPrice + ".";
+    }
+    else{
+    
+    itemsInCart = itemsInCart + " " + cart[i].itemName + " at $" + cart[i].itemPrice + ",";
+    }
+  }
   return itemsInCart;
 }
     
