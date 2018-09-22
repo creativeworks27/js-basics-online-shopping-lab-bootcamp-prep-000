@@ -18,20 +18,10 @@ return `${newObj.itemName} has been added to your cart.`;
 }
 function viewCart() {
   // write your code here
-  let itemsInCart = "In your cart, you have ";
+  let itemsInCart = 
   if (cart.length === 0){
-    return "Your shopping cart is empty.";
+    
   }
-  else if(item == cart.length -1 && cart.length > 1){
-    itemsInCart = itemsInCart + " and " + itemsInCart + ".";
-  }
-    else if(item == cart.length -1){
-      itemsInCart = itemsInCart + " " + itemsInCart + ".";
-    } 
-    else {
-      itemsInCart = itemsInCart + " " + itemsInCart + ",";
-    }
-    return itemsInCart;
   
 }
     
