@@ -18,8 +18,9 @@ return `${newObj.itemName} has been added to your cart.`;
 }
 function viewCart() {
   // write your code here
-  let itemsInCart = 
+  let itemsInCart = "In your cart, you have ";
   if (cart.length === 0){
+    for (i = 0, i < cart.length i++)
     
   }
   
