@@ -25,8 +25,8 @@ function viewCart() {
   else (item == cart.length -1 && cart.length > 1);
   {
     itemsInCart = itemsInCart + " and " + itemsInCart + ".";
-    } 
-    else if (item == cart.length -1)
+    }
+    else if(item == cart.length -1)
     {
       itemsInCart = itemsInCart + " " + itemsInCart + ".";
     } 
@@ -60,7 +60,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
-if(cardNumber === isNaN){
+if(cardNumber === undefined){
     return 'Sorry, we don\'t have a credit card on file for you.'
   }
   let message = 'Your total cost is $'+ total() +', which will be charged to the card '+ cardNumber +'.';
