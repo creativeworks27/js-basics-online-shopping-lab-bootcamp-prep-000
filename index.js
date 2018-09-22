@@ -23,13 +23,13 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
   else if(item == cart.length -1 && cart.length > 1){
-    itemInCart = itemInCart + " and " + itemsInCart + ".";
+    itemsInCart = itemInCart + " and " + itemsInCart + ".";
   }
     else if(item == cart.length -1){
-      itemInCart = itemInCart + " " + itemsInCart + ".";
+      itemsInCart = itemInCart + " " + itemsInCart + ".";
     } 
     else {
-      itemInCart = itemInCart + " " + itemsInCart + ",";
+      itemsInCart = itemInCart + " " + itemsInCart + ",";
     }
     return itemsInCart;
   
