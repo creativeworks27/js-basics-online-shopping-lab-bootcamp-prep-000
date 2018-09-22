@@ -25,8 +25,7 @@ function viewCart() {
   else if (cart.length > 0){
     let itemsInCart = itemsInCart + cart[item].itemName + "at" + cart[item].itemPrice + ".";
   }
-    
-  }
+}
 }
     
 function total() {
