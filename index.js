@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length === 0){
     return "Your shopping cart is empty.";
   }
-  else (item == cart.length -1 && cart.length > 1){
+  else if(item == cart.length -1 && cart.length > 1){
     itemsInCart = itemsInCart + " and " + itemsInCart + ".";
   }
     else if(item == cart.length -1){
