@@ -25,8 +25,8 @@ function viewCart() {
   else (item == cart.length -1 && cart.length > 1);
   {
     itemsInCart = itemsInCart + " and " + itemsInCart + ".";
-    }
-     if(item == cart.length -1)
+  }
+    else if(item == cart.length -1)
     {
       itemsInCart = itemsInCart + " " + itemsInCart + ".";
     } 
