@@ -20,6 +20,7 @@ function viewCart() {
   // write your code here
   let itemsInCart = "In your cart, you have ";
   if (cart.length < 0){
+    return ""
   }
   for (var i = 0; i < cart.length i++){
     
