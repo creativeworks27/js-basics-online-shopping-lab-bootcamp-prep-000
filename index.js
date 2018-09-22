@@ -23,10 +23,8 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
   else if (cart.length === 1){
-    let itemsInCart = itemsInCart + cart[item].itemName + "at" + cart[item].itemPrice + ".";
-  }
+    let itemsInCart = itemsInCart + cart[0].itemName + "at" + cart[0].itemPrice + ".";}
   return itemsInCart;
-}
 }
     
 function total() {
