@@ -26,6 +26,7 @@ function viewCart() {
     let itemsInCart = itemsInCart + cart[item].itemName + "at" + cart[item].itemPrice + ".";
   }
 }
+return itemsInCart;
 }
     
 function total() {
