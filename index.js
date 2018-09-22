@@ -50,7 +50,7 @@ for (let item in cart) {
 function removeFromCart(item) {
   // write your code here
 let updatedCart = [];
-if ()
+
   
 }
 
