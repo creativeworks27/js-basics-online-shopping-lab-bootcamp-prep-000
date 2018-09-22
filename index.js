@@ -31,7 +31,7 @@ function viewCart() {
     else {
       itemInCart = itemInCart + " " + itemsInCart + ",";
     }
-    return itemInCart;
+    return itemsInCart;
   
 }
     
