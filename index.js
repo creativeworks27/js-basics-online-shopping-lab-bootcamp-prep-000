@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length === 0){
     return "Your shopping cart is empty.";
   }
-  else (item == cart.length -1 && cart.length > 1){
+  else (item == cart.length -1 && cart.length > 1);{
     itemsInCart = itemsInCart + " and " + itemsInCart + ".";
   }
     else if(item == cart.length -1){
@@ -59,7 +59,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 if(cardNumber === undefined){
-    return 'Sorry, we don\'t have a credit card on file for you.'
+    return 'Sorry, we don\'t have a credit card on file for you.';
   }
   let message = 'Your total cost is $'+ total() +', which will be charged to the card '+ cardNumber +'.';
   cart.length = 0;
