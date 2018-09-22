@@ -19,14 +19,14 @@ return `${newObj.itemName} has been added to your cart.`;
 function viewCart() {
   // write your code here
   let itemsInCart = "In your cart, you have ";
-  if (cart.length < 0){
+  if (cart.length === 0){
     return "Your shopping cart is empty.";
   }
-  else if (cart.length > 0){
+  else if (cart.length == 1){
     let itemsInCart = itemsInCart + cart[item].itemName + "at" + cart[item].itemPrice + ".";
   }
+  return itemsInCart;
 }
-return itemsInCart;
 }
     
 function total() {
